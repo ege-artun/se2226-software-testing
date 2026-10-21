@@ -82,7 +82,9 @@ Install the [Selenium IDE](https://www.selenium.dev/selenium-ide/) browser exten
 
 > **Note:** the application under test, [Library-DB-Express by jlayher](https://github.com/jlayher/Library-DB-Express), is **not included in this repository** and was not written by the team. Only the test assets we created are stored here, in [`library-db-express/`](library-db-express/).
 
-To reproduce the results, clone (or fork) the original project and add our files to its root:
+> A fork with these tests already added is available at **[ege-artun/Library-DB-Express](https://github.com/ege-artun/Library-DB-Express)** (see its `TESTING.md`). The manual steps below show how the files fit into the original project.
+
+To reproduce the results yourself, clone the original project (or use the fork above) and add our files to its root:
 
 1. Copy `jest/books.test.js` and `mutation/stryker.config.json` to the project root.
 2. In `config/config.json`, point the `test` environment to an in-memory database so the tests never touch `library.db`:
